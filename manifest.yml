@@ -1,0 +1,14 @@
+---
+
+applications:
+- name: eureka
+  memory: 750M
+  instances: 1
+  buildpack: java_buildpack
+  path: build/libs/eureka.jar
+  routes:
+  - route: boston-eureka.cfapps.io
+  services:
+  - basic-auth
+  - config-server
+  
