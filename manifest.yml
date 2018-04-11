@@ -2,7 +2,7 @@
 
 applications:
 - name: eureka
-  memory: 750M
+  memory: 1G
   instances: 1
   buildpack: java_buildpack
   path: build/libs/eureka.jar
